@@ -53,11 +53,6 @@ const app = () => {
                   Contact
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Login
-                </a>
-              </li>
             </ul>
           </div>
         </div>
