@@ -1,7 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Open+Sans:wght@400;500;600&display=swap");
 
-:root {
+::root {
+  --primary-color: #f75023;
+
   --font: "jost", sans-serif;
+  --font2: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(.././src/assets/asset\ 37.jpeg);
+  background-size: 100%;
 }
 
 .logo {
@@ -9,9 +20,63 @@
 }
 
 .nav-item {
-  margin: 0 25px 0 0;
+  margin: 0 30px 0 0;
 }
 
 .navbar-nav li a {
-  font-family: var(--font);
+  font-family: var(--font2);
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+p.perkenalan {
+  margin-top: 72px;
+  font-size: 25px;
+  color: #f75023;
+  line-height: 30px;
+}
+
+div div h3 {
+  line-height: 78px;
+  font-size: 50px;
+}
+
+p.devisi {
+  font-size: 19px;
+  line-height: 30px;
+}
+
+span.text1 {
+  color: #f75023;
+}
+
+p.deskripsi {
+  font-size: 16px;
+}
+
+button.btn.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  margin-top: 10px;
+  margin-right: 24px;
+  padding: 12px 30px 12px 30px;
+  font-size: 16px;
+  font-family: var(--font2);
+  border-radius: 30px;
+  font-weight: 400;
+}
+
+.icons {
+  font-size: 16px;
+  margin-right: 9px;
+}
+
+img.ava {
+  max-width: 100%;
+  margin-top: -45%;
+}
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--primary-color);
 }

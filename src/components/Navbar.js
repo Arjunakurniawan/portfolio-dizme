@@ -2,10 +2,10 @@ import React from "react";
 import logo from ".././assets/asset 0.png";
 
 function Navbar() {
-  return ( 
+  return (
     <section>
-      <nav className="navbar navbar-expand-lg bg-light">
-        <div className="container-md">
+      <nav className="navbar navbar-expand-lg ">
+        <div className="container-md mt-4">
           <img src={logo} className="logo" />
           <button
             className="navbar-toggler"
@@ -24,12 +24,12 @@ function Navbar() {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">
+                <a className="nav-link active" aria-current="page" href="#">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <a className="nav-link" href="#">
                   About
                 </a>
               </li>
@@ -57,8 +57,16 @@ function Navbar() {
           </div>
         </div>
       </nav>
+      <script>
+      var navbar = document.querySelector(".navbar");
+      </script>
+
     </section>
   );
+
+  
+
 }
+
 
 export default Navbar;
