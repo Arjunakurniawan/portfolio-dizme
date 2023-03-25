@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from ".././assets/asset 0.png";
 
 function Navbar() {
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
   return (
     <section>
-      <nav className="navbar navbar-expand-lg ">
-        <div className="container-md mt-4">
-          <img src={logo} className="logo" />
+      <nav
+        className={
+          colorChange
+            ? "navbar navbar-expand-lg fixed-top color-change"
+            : "navbar navbar-expand-lg fixed-top"
+        }
+      >
+        <div className="container-md mt-2">
+          <img src={logo} className="logo" alt="" />
           <button
             className="navbar-toggler"
             type="button"
@@ -57,16 +72,9 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      <script>
-      var navbar = document.querySelector(".navbar");
-      </script>
-
+      <script>var navbar = document.querySelector(".navbar");</script>
     </section>
   );
-
-  
-
 }
-
 
 export default Navbar;
