@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Utilities from "./components/Utilities"
+import Utilities from "./components/Utilities";
+import Contents from "./components/Contents";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <Utilities />
+      <Contents />
     </>
   );
 }
