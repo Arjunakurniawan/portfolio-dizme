@@ -1,9 +1,11 @@
 import gambar from ".././assets/asset 5.jpeg";
+import Hiasan2 from ".././assets/asset 31.png";
 
 function contents() {
   return (
     <section className="secCon" id="about">
       <div className="container-md mt-5 py-5">
+        <img src={Hiasan2} alt="" className="hiasan1" />
         <div className="row">
           <div className="col-md-6">
             <img src={gambar} alt="" className="gambar" />
@@ -26,7 +28,7 @@ function contents() {
               molestiae recusandae et vero officiis non sequi placeat sit
               molestiae dolor.
             </p>
-            <button className="btn btn-primary">selengkapnya</button>
+            <button className="btn btn-primary tombolCont">selengkapnya</button>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ import {
 
 function Hero() {
   return (
-    <section className="sectionHero">
+    <section className="sectionHero" id="hero">
       <div className="container-md">
         <div className="row">
           <div className="col-md-6 mt-5">

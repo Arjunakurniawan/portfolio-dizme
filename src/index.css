@@ -92,7 +92,7 @@ button.btn.btn-primary:hover {
 img.ava {
   max-width: 100%;
   margin-top: -25%;
-  margin-bottom: 50px;
+  margin-bottom: 57px;
 }
 .navbar .navbar-nav .nav-item .nav-link.active,
 .navbar .navbar-nav .nav-item .nav-link:hover {
@@ -158,4 +158,13 @@ p.textCon {
   line-height: 30px;
   margin-top: 25px;
   font-family: var(--font2);
+}
+
+img.hiasan1 {
+  width: 15%;
+  height: 15%;
+}
+
+.btn.btn-primary.tombolCont {
+  margin-right: 200px;
 }
